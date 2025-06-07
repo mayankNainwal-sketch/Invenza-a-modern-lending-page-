@@ -11,7 +11,7 @@ html {
 
 /* Body */    
 body {
-    background-image: url('assets/images/hero_image.png');
+    background-image: url("assets/images/hero_image.png");
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center;
     background-repeat: no-repeat;
