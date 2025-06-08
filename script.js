@@ -188,3 +188,21 @@ paymentForm.onsubmit = function(e) {
         document.body.style.overflow = '';
     }, 1800);
 };
+
+
+
+const subscribeBtn = document.querySelector('#subscription2 .main-btn');
+const subscribeInput = document.querySelector('#subscription2 .email-input');
+
+if (subscribeBtn && subscribeInput) {
+    subscribeBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const email = subscribeInput.value.trim();
+        if (email && /\S+@\S+\.\S+/.test(email)) {
+            alert(`Thank you for subscribing, ${email}!`);
+            subscribeInput.value = '';
+        } else {
+            alert('Please enter a valid email address.');
+        }
+    });
+}
